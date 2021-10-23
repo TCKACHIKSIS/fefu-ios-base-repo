@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zT-xx-m0g">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -13,17 +13,14 @@
         <array key="SF-Pro-Display-Bold.otf">
             <string>SFProDisplay-Bold</string>
         </array>
-        <array key="SF-Pro-Display-Regular.otf">
-            <string>SFProDisplay-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="3XO-IT-9v7">
             <objects>
                 <navigationController id="0zT-xx-m0g" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EzW-vR-qab" customClass="CustomNavigationBar" customModule="fefuactivity" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EzW-vR-qab">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -39,51 +36,45 @@
             <objects>
                 <viewController id="Zyu-Rp-ZBT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lw5-BR-hl7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_image" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-am-mwt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="197.66666666666666"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dkc-am-mwt" secondAttribute="height" multiplier="138:70" id="beC-7o-YNe"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSplash" translatesAutoresizingMaskIntoConstraints="NO" id="HYF-HZ-KQz">
-                                <rect key="frame" x="176.66666666666666" y="229.99999999999997" width="61" height="70.666666666666657"/>
+                                <rect key="frame" x="166.33333333333334" y="217.66666666666666" width="57.333333333333343" height="66.666666666666657"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity_label" translatesAutoresizingMaskIntoConstraints="NO" id="b63-gP-ZLC">
-                                <rect key="frame" x="136" y="329.66666666666669" width="142" height="18.666666666666686"/>
+                                <rect key="frame" x="128" y="313.33333333333331" width="134" height="17.666666666666686"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Созданный студентами 2-ого курса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HhN-T6-ofa">
-                                <rect key="frame" x="115" y="474.33333333333331" width="184" height="61.666666666666686"/>
+                                <rect key="frame" x="108.33333333333333" y="452.33333333333331" width="173.33333333333337" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7J-E5-Xeu" customClass="FEFUButtonType1" customModule="fefuactivity">
-                                <rect key="frame" x="40" y="556" width="334" height="56"/>
+                                <rect key="frame" x="37.666666666666657" y="530.33333333333337" width="314.66666666666674" height="53"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
                                 <state key="normal" title="Зарегистрироваться">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8DF-lv-LrL" kind="show" id="RP5-9z-tfQ"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуй лучший фитнес трекер в двфу" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XsW-Ig-I03">
-                                <rect key="frame" x="42" y="388.33333333333331" width="330" height="78"/>
+                                <rect key="frame" x="39.666666666666657" y="371" width="310.66666666666674" height="73.333333333333314"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="29"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-Gg-SUG">
-                                <rect key="frame" x="135.66666666666666" y="622" width="142.99999999999997" height="32"/>
+                                <rect key="frame" x="123.66666666666669" y="593.33333333333337" width="143" height="32"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
                                 <state key="normal" title="Уже есть аккаунт?">
                                     <color key="titleColor" name="ButtonType1Color"/>
                                 </state>
-                                <connections>
-                                    <segue destination="hI1-ZD-ZR4" kind="show" id="ajp-GI-pgy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fKg-x6-IfV"/>
@@ -122,6 +113,7 @@
             </objects>
             <point key="canvasLocation" x="678.75" y="-31.25"/>
         </scene>
+
         <!--View Controller-->
         <scene sceneID="fjC-i8-Pl6">
             <objects>
@@ -323,19 +315,14 @@
             </objects>
             <point key="canvasLocation" x="1574" y="-247"/>
         </scene>
+
     </scenes>
     <resources>
         <image name="LogoSplash" width="61" height="71"/>
         <image name="activity_label" width="110" height="10.666666984558105"/>
-        <image name="bicycles" width="414" height="388.66665649414062"/>
-        <image name="eye" catalog="system" width="128" height="81"/>
-        <image name="no-color-logo" width="22" height="26"/>
         <image name="top_image" width="414" height="266.66665649414062"/>
         <namedColor name="ButtonType1Color">
             <color red="0.29399999976158142" green="0.035000000149011612" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="text_field_color_type_1">
-            <color red="0.57999998331069946" green="0.63899999856948853" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
