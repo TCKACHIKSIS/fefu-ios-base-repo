@@ -72,12 +72,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пожалуй лучший фитнес трекер в двфу" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XsW-Ig-I03">
                                 <rect key="frame" x="32.5" y="299" width="255" height="42"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-Gg-SUG">
-                                <rect key="frame" x="88.5" y="442" width="143" height="32"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
+                                <rect key="frame" x="85.5" y="442" width="149" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Уже есть аккаунт?">
                                     <color key="titleColor" name="ButtonType1Color"/>
                                 </state>
@@ -131,30 +131,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-yI-h1F">
-                                <rect key="frame" x="20" y="44" width="280" height="37.5"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
+                                <rect key="frame" x="20" y="44" width="280" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Login" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1u-ob-y3z" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="105.5" width="286" height="28.5"/>
+                                <rect key="frame" x="17" y="106.5" width="286" height="28"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" borderStyle="roundedRect" minimumFontSize="17" background="eye" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ahG-0O-4tr" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="154" width="286" height="28"/>
+                                <rect key="frame" x="17" y="154.5" width="286" height="28.5"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPU-9d-aKV">
-                                <rect key="frame" x="274" y="157" width="26" height="22"/>
+                                <rect key="frame" x="274" y="158" width="26" height="22"/>
                                 <color key="tintColor" name="text_field_color_type_1"/>
                                 <state key="normal" image="eye" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-0P-ihi" customClass="FEFUButtonType1" customModule="fefuactivity">
-                                <rect key="frame" x="40" y="262" width="240" height="30"/>
+                                <rect key="frame" x="40" y="263" width="240" height="30"/>
                                 <state key="normal" title="Продолжить">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -163,7 +163,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" image="bicycles" translatesAutoresizingMaskIntoConstraints="NO" id="8Um-bA-5k8">
-                                <rect key="frame" x="0.0" y="362" width="320" height="118"/>
+                                <rect key="frame" x="0.0" y="363" width="320" height="117"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jjD-26-44u"/>
@@ -213,13 +213,13 @@
                                         <rect key="frame" x="0.0" y="58" width="219" height="41"/>
                                         <string key="text">Нажимай на кнопку ниже и начинаем
 трекать активность</string>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время потренить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="85O-oZ-GUQ">
                                         <rect key="frame" x="53" y="17" width="113" height="20"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -290,7 +290,7 @@
                                     <constraint firstAttribute="height" constant="50" id="P5l-hs-aLY"/>
                                 </constraints>
                                 <state key="normal" title="Старт">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="BPs-8c-9h0" kind="show" id="TT3-c1-Xbx"/>
@@ -304,21 +304,21 @@
                                     <tabBarItem title="" image="profileTab" landscapeImage="profileTab" largeContentSizeImage="profileTab" selectedImage="profileTab" id="hNl-zW-9WO"/>
                                 </items>
                             </tabBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-og-4e8">
-                                <rect key="frame" x="0.0" y="44" width="320" height="316"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-og-4e8">
+                                <rect key="frame" x="0.0" y="60" width="320" height="300"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ReW-vP-oB8" customClass="OneStatementInActivity" customModule="fefuactivity">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вчера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QlW-s5-Qvv">
-                                            <rect key="frame" x="16" y="0.0" width="32" height="17"/>
-                                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вчера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="QlW-s5-Qvv">
+                                            <rect key="frame" x="16" y="0.0" width="32" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-Au-teH">
-                                            <rect key="frame" x="16" y="32" width="288" height="79"/>
+                                            <rect key="frame" x="16" y="35.5" width="288" height="88.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.32 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-r8-bYQ">
                                                     <rect key="frame" x="16" y="14" width="53.5" height="21"/>
@@ -333,17 +333,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-EI-vqO">
-                                                    <rect key="frame" x="16" y="59" width="10.5" height="20"/>
+                                                    <rect key="frame" x="16" y="68.5" width="10.5" height="20"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Велосипед" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qhx-aK-Edj">
-                                                    <rect key="frame" x="32" y="59" width="44" height="16"/>
-                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                                    <rect key="frame" x="32" y="68.5" width="44" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 часов назад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f1H-Me-yii">
-                                                    <rect key="frame" x="185.5" y="58" width="64.5" height="17"/>
-                                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                    <rect key="frame" x="185.5" y="67.5" width="64.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -387,16 +387,18 @@
                         <viewLayoutGuide key="safeArea" id="KYp-jO-lSs"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="zI5-og-4e8" firstAttribute="trailing" secondItem="KYp-jO-lSs" secondAttribute="trailing" id="4D6-1N-3Yr"/>
+                            <constraint firstItem="zI5-og-4e8" firstAttribute="leading" secondItem="KYp-jO-lSs" secondAttribute="leading" id="4FD-RF-HWK"/>
                             <constraint firstItem="nZj-4U-JpG" firstAttribute="top" secondItem="zI5-og-4e8" secondAttribute="bottom" id="5jv-G8-m72"/>
                             <constraint firstAttribute="bottom" secondItem="jkw-o9-ISP" secondAttribute="bottom" id="8T9-zD-oTL"/>
                             <constraint firstItem="KYp-jO-lSs" firstAttribute="trailing" secondItem="zI5-og-4e8" secondAttribute="trailing" id="Btz-Ne-x1h"/>
                             <constraint firstItem="zI5-og-4e8" firstAttribute="leading" secondItem="KYp-jO-lSs" secondAttribute="leading" id="SAY-yk-ww6"/>
                             <constraint firstItem="KYp-jO-lSs" firstAttribute="trailing" secondItem="nZj-4U-JpG" secondAttribute="trailing" constant="32" id="TBU-sR-fra"/>
+                            <constraint firstItem="zI5-og-4e8" firstAttribute="top" secondItem="KYp-jO-lSs" secondAttribute="top" constant="16" id="jgl-wG-S3o"/>
                             <constraint firstItem="jkw-o9-ISP" firstAttribute="top" secondItem="nZj-4U-JpG" secondAttribute="bottom" constant="21" id="lkm-qM-PPg"/>
                             <constraint firstItem="jkw-o9-ISP" firstAttribute="trailing" secondItem="KYp-jO-lSs" secondAttribute="trailing" id="qc4-10-SfH"/>
                             <constraint firstItem="jkw-o9-ISP" firstAttribute="leading" secondItem="KYp-jO-lSs" secondAttribute="leading" id="qnc-Mp-eLG"/>
                             <constraint firstItem="nZj-4U-JpG" firstAttribute="leading" secondItem="KYp-jO-lSs" secondAttribute="leading" constant="32" id="reL-gZ-xM7"/>
-                            <constraint firstItem="zI5-og-4e8" firstAttribute="top" secondItem="KYp-jO-lSs" secondAttribute="top" id="wKa-8h-8KY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Активности" id="B5q-TX-ywd">
@@ -423,7 +425,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="47c-6p-x4n" secondAttribute="height" multiplier="7:2" id="Vp0-K5-tVC"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -432,7 +434,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="rTq-rP-Ezg" secondAttribute="height" multiplier="93:17" id="8Yx-EG-cJq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -441,7 +443,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8Yb-xV-Sh0" secondAttribute="height" multiplier="107:27" id="Sdq-9z-Qnp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -450,7 +452,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9Y9-Cn-idJ" secondAttribute="height" multiplier="164:17" id="2qH-F1-mfH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -462,13 +464,13 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Велосипед" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JHN-bC-8sj">
                                         <rect key="frame" x="16" y="105.5" width="46" height="18"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 часов назад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-FM-XIv">
                                         <rect key="frame" x="170" y="108.5" width="68" height="17"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -559,53 +561,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="lpV-wK-A7r">
-                                <rect key="frame" x="20" y="44" width="280" height="37.5"/>
+                                <rect key="frame" x="20" y="44" width="280" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Login" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2L9-Il-mjP" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="107.5" width="286" height="28.5"/>
+                                <rect key="frame" x="17" y="108.5" width="286" height="28.5"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Имя или никнейм" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suc-hB-FVS" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="252" width="286" height="28.5"/>
+                                <rect key="frame" x="17" y="253" width="286" height="28.5"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" borderStyle="roundedRect" minimumFontSize="17" background="eye" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fg8-yR-LHj" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="156" width="286" height="28"/>
+                                <rect key="frame" x="17" y="157" width="286" height="28"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R4-YY-mUf">
-                                <rect key="frame" x="271" y="159" width="26" height="22"/>
+                                <rect key="frame" x="271" y="160" width="26" height="22"/>
                                 <color key="tintColor" name="text_field_color_type_1"/>
                                 <state key="normal" image="eye" catalog="system"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Повторите пароль" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O16-vq-WaD" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="204" width="286" height="28"/>
+                                <rect key="frame" x="17" y="205" width="286" height="28"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-9K-V21">
-                                <rect key="frame" x="271" y="207" width="26" height="22"/>
+                                <rect key="frame" x="271" y="208" width="26" height="22"/>
                                 <color key="tintColor" name="text_field_color_type_1"/>
                                 <state key="normal" image="eye" catalog="system"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пол" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRP-1a-Xs8" customClass="Fefu_text_field_type_1" customModule="fefuactivity">
-                                <rect key="frame" x="17" y="300.5" width="286" height="28"/>
+                                <rect key="frame" x="17" y="301.5" width="286" height="28"/>
                                 <color key="textColor" name="text_field_color_type_1"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnK-aD-pGX" customClass="FEFUButtonType1" customModule="fefuactivity">
-                                <rect key="frame" x="40" y="353.5" width="240" height="30"/>
+                                <rect key="frame" x="40" y="354.5" width="240" height="30"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="13"/>
                                 <state key="normal" title="Продолжить">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -615,17 +617,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NVw-Ch-tdr">
-                                <rect key="frame" x="17" y="391" width="286" height="37"/>
+                                <rect key="frame" x="17" y="392" width="286" height="37"/>
                                 <string key="text">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity_label" translatesAutoresizingMaskIntoConstraints="NO" id="8Yk-KA-T5E">
-                                <rect key="frame" x="135.5" y="448" width="49" height="11"/>
+                                <rect key="frame" x="135.5" y="449" width="49" height="11"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-color-logo" translatesAutoresizingMaskIntoConstraints="NO" id="7mX-9X-05G">
-                                <rect key="frame" x="152" y="466.5" width="16" height="12"/>
+                                <rect key="frame" x="152" y="467.5" width="16" height="12"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Cs-g4-ykJ"/>
@@ -683,7 +685,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PEN-DR-omL"/>
+        <segue reference="ByC-yj-asO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSplash" width="61" height="71"/>
