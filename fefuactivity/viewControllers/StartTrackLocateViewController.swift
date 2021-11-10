@@ -10,6 +10,7 @@ import CoreLocation
 import MapKit
 class LocationTrackingView: UIViewController{
     
+    
     @IBOutlet weak var mapView: MKMapView!
     
     private let locationManager: CLLocationManager = {
