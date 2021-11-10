@@ -19,6 +19,7 @@
 		2CBE37EC27291CBA009BC25C /* fefu_button_light_blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE37EB27291CBA009BC25C /* fefu_button_light_blue.swift */; };
 		2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC209C1271AAA6900D5453C /* fefu_text_field_type1.swift */; };
 		2CC209C4271AB8E200D5453C /* custom_navigation_item_type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC209C3271AB8E200D5453C /* custom_navigation_item_type1.swift */; };
+		2CC9ED46273BF40000100143 /* StartTrackLocateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9ED45273BF40000100143 /* StartTrackLocateViewController.swift */; };
 		2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */; };
 		2CD15AF3272A603B0072C3BB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */; };
 		2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */; };
@@ -39,6 +40,7 @@
 		2CBE37EB27291CBA009BC25C /* fefu_button_light_blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_button_light_blue.swift; sourceTree = "<group>"; };
 		2CC209C1271AAA6900D5453C /* fefu_text_field_type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_text_field_type1.swift; sourceTree = "<group>"; };
 		2CC209C3271AB8E200D5453C /* custom_navigation_item_type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_navigation_item_type1.swift; sourceTree = "<group>"; };
+		2CC9ED45273BF40000100143 /* StartTrackLocateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTrackLocateViewController.swift; sourceTree = "<group>"; };
 		2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../Downloads/San Francisco Pro Text 2/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContollerActivnostiEmpty.swift; sourceTree = "<group>"; };
 		2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerActivnostiMain.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				1DE4E5C8270A5CCE004A30CA /* ViewController.swift */,
 				2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */,
 				2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */,
+				2CC9ED45273BF40000100143 /* StartTrackLocateViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC9ED46273BF40000100143 /* StartTrackLocateViewController.swift in Sources */,
 				2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */,
 				2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */,
 				2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */,
