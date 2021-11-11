@@ -45,6 +45,8 @@ class LocationTrackingView: UIViewController{
         }
     }
     
+    let userLocationIdentifier = "user_location_icon"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
@@ -76,5 +78,18 @@ extension LocationTrackingView: MKMapViewDelegate{
             return render
         }
         return MKOverlayRenderer(overlay: overlay)
+    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if let annotation = annotation as? MKUserLocation {
+            
+            let dequeView = mapView.dequeueReusableAnnotationView(withIdentifier: userLocationIdentifier)
+            
+            let view = dequeView ?? MKAnnotationView(
+                annotation: annotation, reuseIdentifier: userLocationIdentifier
+            )
+            view.image = UIImage(named: "user_location_icon")
+            return view
+        }
+        return nil
     }
 }

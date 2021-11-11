@@ -236,7 +236,7 @@
                                 </constraints>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKf-3s-rlq">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="HCl-ea-a3E"/>
@@ -244,7 +244,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-L9-9W9" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="733" width="350" height="50"/>
+                                <rect key="frame" x="32" y="699" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cna-JF-WuW"/>
                                 </constraints>
@@ -541,7 +541,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U36-SZ-avC">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="NcA-Np-FcN"/>
@@ -549,7 +549,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri4-5m-2iY" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="742" width="350" height="50"/>
+                                <rect key="frame" x="32" y="708" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EEm-Qu-qCX"/>
                                 </constraints>
