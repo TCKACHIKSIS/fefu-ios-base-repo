@@ -20,14 +20,20 @@ class ViewControllerActivnosiMain: UIViewController {
     }
 }
 
+
 extension ViewControllerActivnosiMain: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OneStatementInActivityTableViewCell", for:indexPath )
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "OneStatementInActivityTableViewCell", for:indexPath ) as? OneStatementInActivityTableViewCell{
+            return cell
+        } else {
+            assert(false)
+            return UITableViewCell()
+        }
+        
     }
     
     
