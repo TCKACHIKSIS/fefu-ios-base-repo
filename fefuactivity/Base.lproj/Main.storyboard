@@ -307,7 +307,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-og-4e8">
                                 <rect key="frame" x="0.0" y="104" width="414" height="638"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="ReW-vP-oB8" customClass="OneStatementInActivity" customModule="fefuactivity">
+                                <view key="tableFooterView" contentMode="scaleToFill" id="ReW-vP-oB8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -404,6 +404,9 @@
                     <navigationItem key="navigationItem" title="Активности" id="B5q-TX-ywd">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="gfk-ZD-EE4"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table_with_activnosti" destination="zI5-og-4e8" id="zRd-vr-zU1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtY-9D-2Xv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

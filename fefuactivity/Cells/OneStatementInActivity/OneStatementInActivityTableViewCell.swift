@@ -1,17 +1,23 @@
 //
-//  one_statement_in_activity.swift
+//  OneStatementInActivityTableViewCell.swift
 //  fefuactivity
 //
-//  Created by иван on 29.10.2021.
+//  Created by иван on 12.11.2021.
 //
 
 import UIKit
 
-class OneStatementInActivity: UIView{
-    required init?(coder: NSCoder){
-        super.init(coder: coder)
-        
-        commonInit()
+class OneStatementInActivityTableViewCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
     private func commonInit(){
         self.viewWithTag(1)?.layer.cornerRadius = 12;
