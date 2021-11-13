@@ -27,7 +27,7 @@
                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1d-bF-qvs">
                         <rect key="frame" x="16" y="51" width="464" height="82"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.32 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x8j-yR-m2h">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.32 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x8j-yR-m2h">
                                 <rect key="frame" x="16" y="14" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -89,6 +89,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="how_time_ago" destination="CAe-IE-5Pa" id="b8K-9R-ajM"/>
+                <outlet property="image_of_activnosti" destination="myk-LS-UnA" id="xgy-8G-YD4"/>
+                <outlet property="long_of_activnosi" destination="x8j-yR-m2h" id="fIO-c9-iYt"/>
+                <outlet property="long_time_of_activnosti" destination="qpB-2x-nIc" id="J2g-pb-f43"/>
+                <outlet property="time_of_activnost" destination="rQz-Rs-a3u" id="aob-vy-0Ou"/>
+                <outlet property="type_of_activnosti" destination="CEB-jc-t4A" id="UXm-Gy-SMu"/>
+            </connections>
             <point key="canvasLocation" x="180.43478260869566" y="-48.214285714285715"/>
         </tableViewCell>
     </objects>
