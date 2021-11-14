@@ -28,13 +28,15 @@ class ViewControllerActivnosiMain: UIViewController {
         do {
             let rawActivity =
                 try FEFUCoreDataContainer.instance.context.fetch(locate_request)
-            let testViewData:[String] = rawActivity.map{
-                rawActivity in
-                return rawActivity.locationData!
+            if ( rawActivity.count != 0 ){
+                let testViewData:[String] = rawActivity.map{
+                    rawActivity in
+                    return rawActivity.locationData ?? "??"
+                }
+                print("ООООООООККККККККККК")
+                print(testViewData)
+                print("OOOOOOOKKKKKK222222")
             }
-            print("ООООООООККККККККККК")
-            print(testViewData)
-            print("OOOOOOOKKKKKK222222")
         } catch {
             print(error)
         }
