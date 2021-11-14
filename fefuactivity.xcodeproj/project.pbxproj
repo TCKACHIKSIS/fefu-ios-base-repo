@@ -18,6 +18,8 @@
 		2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */; };
 		2C9E4691273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E468F273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib */; };
 		2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E4692273F863D00B26FE4 /* location_data_struct.swift */; };
+		2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */; };
+		2C9E46992741195F00B26FE4 /* FEFUCoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E46982741195F00B26FE4 /* FEFUCoreDataContainer.swift */; };
 		2CBE37EC27291CBA009BC25C /* fefu_button_light_blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE37EB27291CBA009BC25C /* fefu_button_light_blue.swift */; };
 		2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC209C1271AAA6900D5453C /* fefu_text_field_type1.swift */; };
 		2CC209C4271AB8E200D5453C /* custom_navigation_item_type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC209C3271AB8E200D5453C /* custom_navigation_item_type1.swift */; };
@@ -41,6 +43,8 @@
 		2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneStatementInActivityTableViewCell.swift; sourceTree = "<group>"; };
 		2C9E468F273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneStatementInActivityTableViewCell.xib; sourceTree = "<group>"; };
 		2C9E4692273F863D00B26FE4 /* location_data_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location_data_struct.swift; sourceTree = "<group>"; };
+		2C9E46952741062F00B26FE4 /* fefuactivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fefuactivity.xcdatamodel; sourceTree = "<group>"; };
+		2C9E46982741195F00B26FE4 /* FEFUCoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEFUCoreDataContainer.swift; sourceTree = "<group>"; };
 		2CBE37EB27291CBA009BC25C /* fefu_button_light_blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_button_light_blue.swift; sourceTree = "<group>"; };
 		2CC209C1271AAA6900D5453C /* fefu_text_field_type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_text_field_type1.swift; sourceTree = "<group>"; };
 		2CC209C3271AB8E200D5453C /* custom_navigation_item_type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_navigation_item_type1.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				2C9E46972741191800B26FE4 /* CoreData */,
 				2C9E4688273E49CF00B26FE4 /* Cells */,
 				2CD15AEC272A5EA40072C3BB /* navigationItems */,
 				2CD15AEB272A5E820072C3BB /* viewControllers */,
@@ -93,6 +98,7 @@
 				1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */,
 				2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */,
 				2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */,
+				2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -113,6 +119,14 @@
 				2C9E4692273F863D00B26FE4 /* location_data_struct.swift */,
 			);
 			path = OneStatementInActivity;
+			sourceTree = "<group>";
+		};
+		2C9E46972741191800B26FE4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E46982741195F00B26FE4 /* FEFUCoreDataContainer.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		2CD15AE1272A5CDE0072C3BB /* buttons */ = {
@@ -227,6 +241,7 @@
 			files = (
 				2CC9ED46273BF40000100143 /* StartTrackLocateViewController.swift in Sources */,
 				2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */,
+				2C9E46992741195F00B26FE4 /* FEFUCoreDataContainer.swift in Sources */,
 				2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */,
 				2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */,
 				2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */,
@@ -236,6 +251,7 @@
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
 				2CBE37EC27291CBA009BC25C /* fefu_button_light_blue.swift in Sources */,
+				2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */,
 				2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +461,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C9E46952741062F00B26FE4 /* fefuactivity.xcdatamodel */,
+			);
+			currentVersion = 2C9E46952741062F00B26FE4 /* fefuactivity.xcdatamodel */;
+			path = fefuactivity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DE4E5B9270A5CCE004A30CA /* Project object */;
 }

@@ -10,9 +10,9 @@ import CoreLocation
 import MapKit
 class LocationTrackingView: UIViewController{
     
+    let CoreDataActivity = FEFUCoreDataContainer.instance
     
     @IBOutlet weak var mapView: MKMapView!
-    
     private let locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
@@ -44,7 +44,9 @@ class LocationTrackingView: UIViewController{
             
         }
     }
-    
+    func getUserLocationHistory() -> [CLLocation] {
+        return userLocationHistory
+    }
     let userLocationIdentifier = "user_location_icon"
     
     override func viewDidLoad() {
@@ -56,6 +58,12 @@ class LocationTrackingView: UIViewController{
         mapView.delegate = self
     }
     
+    @IBAction func SaveActivityData(_ sender: Any) {
+        let activity_data_for_saving = userLocationHistory.description
+        let core_data = CDUserActivitys(context: CoreDataActivity.context)
+        core_data.locationData = activity_data_for_saving;
+        CoreDataActivity.saveContext()
+    }
 }
 extension LocationTrackingView: CLLocationManagerDelegate{
     

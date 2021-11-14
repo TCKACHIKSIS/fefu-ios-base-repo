@@ -8,13 +8,14 @@
 import UIKit
 
 class OneStatementInActivityTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var how_time_ago: UILabel!
     @IBOutlet weak var type_of_activnosti: UILabel!
     @IBOutlet weak var image_of_activnosti: UIImageView!
-    @IBOutlet weak var long_way_of_activnosi: UILabel!
+    @IBOutlet weak var long_way_of_activnost: UILabel!
     @IBOutlet weak var long_time_of_activnosti: UILabel!
     @IBOutlet weak var header_time_of_activnost: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,7 +28,6 @@ class OneStatementInActivityTableViewCell: UITableViewCell {
     }
     private func commonInit(){
         self.viewWithTag(1)?.layer.cornerRadius = 12;
-        
-        ///заготовка под класс для штучек на вью, где показывается список тренировок, которых по идее много, просто пока разбираюсь  с тем, как нормально компонент в коде сохранить с автолейаутом, пока просто сверстал.
+            
     }
 }
