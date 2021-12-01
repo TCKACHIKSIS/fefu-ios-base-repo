@@ -59,16 +59,19 @@ class LocationTrackingView: UIViewController{
     }
     
     @IBAction func SaveActivityData(_ sender: Any) {
-        let activity_data_for_saving = userLocationHistory.description
+        var long_of_activnosti = Double();
+        for i in 0...userLocationHistory.count-2{
+            long_of_activnosti += userLocationHistory[i].distance(from: userLocationHistory[i+1])
+        }
+        print(long_of_activnosti)
         let core_data = CDUserActivitys(context: CoreDataActivity.context)
-        core_data.locationData = activity_data_for_saving;
+        core_data.long_of_activity = long_of_activnosti / 1000;
         CoreDataActivity.saveContext()
     }
 }
 extension LocationTrackingView: CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
         guard let currentLocation = locations.first else {
             return
         }

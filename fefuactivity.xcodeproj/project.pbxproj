@@ -15,7 +15,6 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		2C01746127198F5500154C57 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */; };
 		2C4A210D2719B1E900AE6331 /* fefu_button_type_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A210C2719B1E900AE6331 /* fefu_button_type_1.swift */; };
-		2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */; };
 		2C9E4691273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E468F273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib */; };
 		2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E4692273F863D00B26FE4 /* location_data_struct.swift */; };
 		2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */; };
@@ -27,6 +26,7 @@
 		2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */; };
 		2CD15AF3272A603B0072C3BB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */; };
 		2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */; };
+		2CFB53FF2757B43D00DC6F99 /* OneStatementInActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -241,8 +241,8 @@
 			files = (
 				2CC9ED46273BF40000100143 /* StartTrackLocateViewController.swift in Sources */,
 				2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */,
+				2CFB53FF2757B43D00DC6F99 /* OneStatementInActivityTableViewCell.swift in Sources */,
 				2C9E46992741195F00B26FE4 /* FEFUCoreDataContainer.swift in Sources */,
-				2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */,
 				2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */,
 				2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,

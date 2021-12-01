@@ -31,7 +31,7 @@ class ViewControllerActivnosiMain: UIViewController {
             if ( rawActivity.count != 0 ){
                 let testViewData:[String] = rawActivity.map{
                     rawActivity in
-                    return rawActivity.locationData ?? "??"
+                    return rawActivity.long_of_activity.description
                 }
                 print("ООООООООККККККККККК")
                 print(testViewData)
