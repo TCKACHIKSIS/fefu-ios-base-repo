@@ -9,6 +9,7 @@ import UIKit
 import CoreLocation
 import MapKit
 class LocationTrackingView: UIViewController{
+    @IBOutlet weak var container_view: UIView!
     
     let CoreDataActivity = FEFUCoreDataContainer.instance
     
