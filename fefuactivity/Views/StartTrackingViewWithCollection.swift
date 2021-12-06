@@ -18,7 +18,7 @@ class StartTrackingViewWithCollection: UIView {
     @IBAction func Outlet_button_collection(_ sender: Any) {
         let parent = self.parentViewController as! LocationTrackingView
         parent.start_track_location()
-        self.isHidden = true
+        
     }
     
     

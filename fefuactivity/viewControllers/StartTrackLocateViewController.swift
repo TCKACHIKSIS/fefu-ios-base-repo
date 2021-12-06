@@ -14,9 +14,11 @@ class LocationTrackingView: UIViewController{
         super.viewDidLoad()
         locationManager.delegate = self
         mapView.delegate = self
+        another_container_view.isHidden = true
     }
     let userLocationIdentifier = "user_location_icon"
     @IBOutlet weak var container_view: UIView!
+    @IBOutlet weak var another_container_view: UIView!
     @IBOutlet weak var mapView: MKMapView!
     let CoreDataActivity = FEFUCoreDataContainer.instance
     
@@ -24,6 +26,8 @@ class LocationTrackingView: UIViewController{
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         mapView.showsUserLocation = true
+        container_view.isHidden = true
+        another_container_view.isHidden = false
     }
     
     private let locationManager: CLLocationManager = {

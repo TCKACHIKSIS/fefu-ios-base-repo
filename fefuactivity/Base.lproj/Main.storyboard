@@ -435,10 +435,16 @@
                                     <action selector="SaveActivityData:" destination="RvQ-WS-TYF" eventType="touchUpInside" id="pJp-X0-rA8"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dk-IB-y6T">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dk-IB-y6T" customClass="Toggle_container_view_track" customModule="fefuactivity">
                                 <rect key="frame" x="0.0" y="554.33333333333337" width="414" height="307.66666666666663"/>
                                 <connections>
                                     <segue destination="q4f-uR-Yvb" kind="embed" id="nVb-jk-23f"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7Z-cw-KGQ">
+                                <rect key="frame" x="0.0" y="554.33333333333337" width="414" height="307.66666666666663"/>
+                                <connections>
+                                    <segue destination="viz-mN-T8N" kind="embed" id="25C-CK-drn"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -447,16 +453,21 @@
                         <constraints>
                             <constraint firstItem="7Dk-IB-y6T" firstAttribute="height" secondItem="h5o-bh-Ejz" secondAttribute="height" multiplier="0.397494" id="47H-Kf-UvV"/>
                             <constraint firstItem="7Dk-IB-y6T" firstAttribute="bottom" secondItem="sCW-NW-jDI" secondAttribute="bottom" id="4Th-jL-y6Z"/>
+                            <constraint firstItem="m7Z-cw-KGQ" firstAttribute="height" secondItem="h5o-bh-Ejz" secondAttribute="height" multiplier="0.397494" id="7xQ-ai-MM3"/>
                             <constraint firstItem="sCW-NW-jDI" firstAttribute="trailing" secondItem="h5o-bh-Ejz" secondAttribute="trailing" id="9GY-83-f8C"/>
+                            <constraint firstItem="sCW-NW-jDI" firstAttribute="bottom" secondItem="m7Z-cw-KGQ" secondAttribute="bottom" id="EX6-Cz-Nqp"/>
                             <constraint firstItem="sCW-NW-jDI" firstAttribute="bottom" secondItem="h5o-bh-Ejz" secondAttribute="bottom" id="a4U-8a-6FR"/>
                             <constraint firstItem="h5o-bh-Ejz" firstAttribute="top" secondItem="sCW-NW-jDI" secondAttribute="top" id="ehn-yr-8w9"/>
+                            <constraint firstItem="sCW-NW-jDI" firstAttribute="trailing" secondItem="m7Z-cw-KGQ" secondAttribute="trailing" id="lah-Su-PhP"/>
                             <constraint firstItem="7Dk-IB-y6T" firstAttribute="trailing" secondItem="sCW-NW-jDI" secondAttribute="trailing" id="pkL-Dq-DYp"/>
                             <constraint firstItem="7Dk-IB-y6T" firstAttribute="leading" secondItem="sCW-NW-jDI" secondAttribute="leading" id="qq6-18-O6n"/>
+                            <constraint firstItem="m7Z-cw-KGQ" firstAttribute="leading" secondItem="sCW-NW-jDI" secondAttribute="leading" id="rLo-ir-dzT"/>
                             <constraint firstItem="h5o-bh-Ejz" firstAttribute="leading" secondItem="sCW-NW-jDI" secondAttribute="leading" id="wpr-PF-InM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nak-LK-qg8"/>
                     <connections>
+                        <outlet property="another_container_view" destination="m7Z-cw-KGQ" id="uTa-4n-Rqj"/>
                         <outlet property="container_view" destination="7Dk-IB-y6T" id="mup-yh-xws"/>
                         <outlet property="mapView" destination="h5o-bh-Ejz" id="JNY-eF-2Ym"/>
                     </connections>
@@ -812,6 +823,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igu-Wd-kc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-646.37681159420299" y="2304.9107142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6i9-kE-c5M">
+            <objects>
+                <viewController id="viz-mN-T8N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AU5-iF-pNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="307.66666666666669"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-Iq-rvh">
+                                <rect key="frame" x="186" y="143" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqR-16-CJ4">
+                                <rect key="frame" x="182" y="80" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MdS-zO-JN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="2018"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
