@@ -21,14 +21,22 @@ class StartTrackingViewWithCollection: UIView {
     }
 }
 
-extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollectionViewDelegate{
+extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+        {
+                // In this function is the code you must implement to your code project if you want to change size of Collection view
+        let width  = ((self.window?.frame.size.width)!-20)/3
+        return CGSize(width: width, height: width / 2.5)
+        }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCellStartTracking", for: indexPath) as! CollectionViewCellStartTracking
         cell.activity_label.text = lol_kek[indexPath.row]
+
         return cell
     }
     

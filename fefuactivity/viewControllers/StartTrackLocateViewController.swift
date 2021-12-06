@@ -61,15 +61,17 @@ class LocationTrackingView: UIViewController{
     
     @IBAction func SaveActivityData(_ sender: Any) {
         var long_of_activnosti = Double();
+        if userLocationHistory.count > 0{
         for i in 0...userLocationHistory.count-2{
             long_of_activnosti += userLocationHistory[i].distance(from: userLocationHistory[i+1])
         }
-        print(long_of_activnosti)
-        let core_data = CDUserActivitys(context: CoreDataActivity.context)
-        core_data.long_of_activity = long_of_activnosti / 1000;
-        core_data.start_date = userLocationHistory[0].timestamp
-        core_data.end_date = userLocationHistory.last?.timestamp
-        CoreDataActivity.saveContext()
+            print(long_of_activnosti, "ывавыавыавыавыавы")
+            let core_data = CDUserActivitys(context: CoreDataActivity.context)
+            core_data.long_of_activity = long_of_activnosti / 1000;
+            core_data.start_date = userLocationHistory[0].timestamp
+            core_data.end_date = userLocationHistory.last?.timestamp
+            CoreDataActivity.saveContext()
+        }
     }
 }
 extension LocationTrackingView: CLLocationManagerDelegate{

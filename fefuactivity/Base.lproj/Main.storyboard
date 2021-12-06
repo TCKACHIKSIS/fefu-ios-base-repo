@@ -745,7 +745,6 @@
         <!--View Controller-->
         <scene sceneID="baj-s4-aYF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Igu-Wd-kc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="q4f-uR-Yvb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pYt-e6-sB1" customClass="StartTrackingViewWithCollection" customModule="fefuactivity">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="307.66666666666669"/>
@@ -807,6 +806,7 @@
                         </connections>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igu-Wd-kc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-646.37681159420299" y="2304.9107142857142"/>
         </scene>
