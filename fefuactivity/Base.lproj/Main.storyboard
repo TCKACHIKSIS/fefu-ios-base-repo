@@ -785,6 +785,9 @@
                                 <state key="normal" title="Старт">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="start_track_location:" destination="pYt-e6-sB1" eventType="touchUpInside" id="sMa-Gq-rwE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JhH-wA-WNT"/>
@@ -803,6 +806,7 @@
                         </constraints>
                         <connections>
                             <outlet property="collection_view" destination="K7L-6s-zT5" id="W1V-Xh-ElK"/>
+                            <outlet property="start_activity" destination="Lur-cc-Ir5" id="ckC-hv-dLl"/>
                         </connections>
                     </view>
                 </viewController>

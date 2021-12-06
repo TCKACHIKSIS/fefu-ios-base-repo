@@ -11,6 +11,12 @@ class StartTrackingViewWithCollection: UIView {
     var current_selected_activity: String = ""
     var current_selected_cell = IndexPath()
     var lol_kek = ["Велосипед", "Бег"]
+    @IBOutlet weak var start_track_activity: FEFUButtonType2LightBlue!
+    
+    @IBAction func start_track_location(_ sender: Any) {
+        
+    }
+    
     @IBOutlet weak var collection_view: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,10 +27,14 @@ class StartTrackingViewWithCollection: UIView {
     }
 }
 
-extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
+
+
+extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
+    {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
         {
