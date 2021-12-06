@@ -13,15 +13,18 @@ class LocationTrackingView: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
         mapView.delegate = self
     }
     let userLocationIdentifier = "user_location_icon"
     @IBOutlet weak var container_view: UIView!
     @IBOutlet weak var mapView: MKMapView!
     let CoreDataActivity = FEFUCoreDataContainer.instance
+    
+    func start_track_location(){
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.showsUserLocation = true
+    }
     
     private let locationManager: CLLocationManager = {
         let manager = CLLocationManager()

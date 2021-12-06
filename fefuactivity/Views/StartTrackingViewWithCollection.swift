@@ -11,11 +11,16 @@ class StartTrackingViewWithCollection: UIView {
     var current_selected_activity: String = ""
     var current_selected_cell = IndexPath()
     var lol_kek = ["Велосипед", "Бег"]
-    @IBOutlet weak var start_track_activity: FEFUButtonType2LightBlue!
     
-    @IBAction func start_track_location(_ sender: Any) {
-        
+    
+   
+
+    @IBAction func Outlet_button_collection(_ sender: Any) {
+        let parent = self.parentViewController as! LocationTrackingView
+        parent.start_track_location()
+        self.isHidden = true
     }
+    
     
     @IBOutlet weak var collection_view: UICollectionView!
     override func awakeFromNib() {
@@ -27,7 +32,18 @@ class StartTrackingViewWithCollection: UIView {
     }
 }
 
-
+extension UIView {
+    var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if let viewController = parentResponder as? LocationTrackingView {
+                return viewController
+            }
+        }
+        return nil
+    }
+}
 
 extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
     {
