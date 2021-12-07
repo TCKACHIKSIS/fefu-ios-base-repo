@@ -286,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZj-4U-JpG" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="722" width="350" height="50"/>
+                                <rect key="frame" x="32" y="688" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="P5l-hs-aLY"/>
                                 </constraints>
@@ -298,7 +298,7 @@
                                 </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkw-o9-ISP">
-                                <rect key="frame" x="0.0" y="793" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="jB3-ch-KSw"/>
@@ -306,7 +306,7 @@
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-og-4e8">
-                                <rect key="frame" x="0.0" y="16" width="414" height="706"/>
+                                <rect key="frame" x="0.0" y="16" width="414" height="672"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ReW-vP-oB8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
@@ -751,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-6s-zT5">
-                                <rect key="frame" x="0.0" y="138.33333333333334" width="414" height="88.666666666666686"/>
+                                <rect key="frame" x="0.0" y="138.33333333333334" width="414" height="88.666666666666657"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nzz-fY-8IX">
                                     <size key="itemSize" width="199" height="84"/>
@@ -778,7 +778,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lur-cc-Ir5" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="77" y="250.66666666666666" width="260" height="50"/>
+                                <rect key="frame" x="77" y="250.66666666666663" width="260" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="24Z-Um-0bT"/>
                                 </constraints>

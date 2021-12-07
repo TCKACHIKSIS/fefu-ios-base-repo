@@ -8,22 +8,25 @@
 import UIKit
 import CoreLocation
 import MapKit
+
+
 class LocationTrackingView: UIViewController{
+    
+    weak var delegate_active_activity: Active_activityDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         mapView.delegate = self
+        locationManager.requestAlwaysAuthorization()
         another_container_view.isHidden = true
-        
     }
     let userLocationIdentifier = "user_location_icon"
     @IBOutlet weak var container_view: UIView!
     @IBOutlet weak var another_container_view: UIView!
     @IBOutlet weak var mapView: MKMapView!
     let CoreDataActivity = FEFUCoreDataContainer.instance
-    
     func start_track_location(){
-        locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         mapView.showsUserLocation = true
         container_view.isHidden = true
@@ -78,6 +81,7 @@ class LocationTrackingView: UIViewController{
                 )
             mapView.setRegion(region, animated: true)
             userLocationHistory.append(userLocation)
+            delegate_active_activity?.updateDistance(text: "FFaa")
         }
     }
     
