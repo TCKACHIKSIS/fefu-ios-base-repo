@@ -12,8 +12,6 @@ import MapKit
 
 class LocationTrackingView: UIViewController{
     
-    weak var delegate_active_activity: Active_activityDelegate?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
@@ -27,10 +25,15 @@ class LocationTrackingView: UIViewController{
     @IBOutlet weak var mapView: MKMapView!
     let CoreDataActivity = FEFUCoreDataContainer.instance
     func start_track_location(){
+        
         locationManager.startUpdatingLocation()
         mapView.showsUserLocation = true
         container_view.isHidden = true
         another_container_view.isHidden = false
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let needed: Run_activity_controller = storyboard.instantiateViewController(withIdentifier: "Run_activity_controller") as! Run_activity_controller
+        needed.createTimerFromParent()
+        
     }
     
     func pause_track_location(){
@@ -40,7 +43,6 @@ class LocationTrackingView: UIViewController{
     func continue_updating_location(){
         locationManager.startUpdatingLocation()
         mapView.showsUserLocation = true
-        
     }
     
     func finish_activity(){
@@ -81,7 +83,6 @@ class LocationTrackingView: UIViewController{
                 )
             mapView.setRegion(region, animated: true)
             userLocationHistory.append(userLocation)
-            delegate_active_activity?.updateDistance(text: "FFaa")
         }
     }
     

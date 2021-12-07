@@ -567,7 +567,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U36-SZ-avC">
-                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="725" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="NcA-Np-FcN"/>
@@ -575,7 +575,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri4-5m-2iY" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="688" width="350" height="50"/>
+                                <rect key="frame" x="32" y="654" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EEm-Qu-qCX"/>
                                 </constraints>
@@ -816,9 +816,9 @@
         <!--Run activity controller-->
         <scene sceneID="6i9-kE-c5M">
             <objects>
-                <viewController storyboardIdentifier="Run_activity_controller" id="viz-mN-T8N" customClass="Run_activity_controller" customModule="fefuactivity" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AU5-iF-pNJ" customClass="Active_activity" customModule="fefuactivity" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="321.33333333333326"/>
+                <viewController storyboardIdentifier="Run_activity_controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="viz-mN-T8N" customClass="Run_activity_controller" customModule="fefuactivity" sceneMemberID="viewController">
+                    <view key="view" tag="5" contentMode="scaleToFill" id="AU5-iF-pNJ" customClass="Active_activity" customModule="fefuactivity" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="321.33333333333331"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqK-cj-568">
@@ -869,19 +869,19 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На велике" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-P7-6HR">
-                                <rect key="frame" x="10" y="20" width="175.66666666666666" height="29"/>
+                                <rect key="frame" x="20" y="50" width="175.66666666666666" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TC3-Oy-nQF">
-                                <rect key="frame" x="10" y="59" width="130.33333333333334" height="32.666666666666657"/>
+                                <rect key="frame" x="10" y="166.33333333333334" width="130.33333333333334" height="32.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:46" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IXC-JM-Kue">
-                                <rect key="frame" x="308" y="59" width="96" height="29"/>
+                                <rect key="frame" x="308" y="168.33333333333334" width="96" height="28.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -892,16 +892,16 @@
                         <constraints>
                             <constraint firstItem="TC3-Oy-nQF" firstAttribute="leading" secondItem="auN-Z8-e7J" secondAttribute="leading" constant="10" id="0ge-53-rSD"/>
                             <constraint firstItem="auN-Z8-e7J" firstAttribute="trailing" secondItem="IXC-JM-Kue" secondAttribute="trailing" constant="10" id="3ge-pQ-0UB"/>
-                            <constraint firstItem="YD3-P7-6HR" firstAttribute="top" secondItem="AU5-iF-pNJ" secondAttribute="top" constant="20" id="6F9-w3-Ju5"/>
-                            <constraint firstItem="IXC-JM-Kue" firstAttribute="top" secondItem="AU5-iF-pNJ" secondAttribute="top" constant="59" id="6So-cG-WFb"/>
-                            <constraint firstItem="TC3-Oy-nQF" firstAttribute="top" secondItem="YD3-P7-6HR" secondAttribute="bottom" constant="10" id="8o8-Oa-1Kv"/>
+                            <constraint firstItem="YD3-P7-6HR" firstAttribute="top" secondItem="AU5-iF-pNJ" secondAttribute="top" constant="50" id="6F9-w3-Ju5"/>
+                            <constraint firstItem="IXC-JM-Kue" firstAttribute="centerY" secondItem="auN-Z8-e7J" secondAttribute="centerY" id="GK6-gT-ldX"/>
                             <constraint firstItem="xqK-cj-568" firstAttribute="centerX" secondItem="auN-Z8-e7J" secondAttribute="centerX" id="KWS-bh-kut"/>
                             <constraint firstItem="xqK-cj-568" firstAttribute="width" secondItem="AU5-iF-pNJ" secondAttribute="width" multiplier="0.413043" id="KnQ-ci-k7P"/>
                             <constraint firstItem="auN-Z8-e7J" firstAttribute="bottom" secondItem="xqK-cj-568" secondAttribute="bottom" constant="25.670000000000002" id="QoB-ed-Qif"/>
-                            <constraint firstItem="YD3-P7-6HR" firstAttribute="leading" secondItem="auN-Z8-e7J" secondAttribute="leading" constant="10" id="SrR-nw-fy4"/>
+                            <constraint firstItem="YD3-P7-6HR" firstAttribute="leading" secondItem="auN-Z8-e7J" secondAttribute="leading" constant="20" id="SrR-nw-fy4"/>
                             <constraint firstItem="IXC-JM-Kue" firstAttribute="width" secondItem="AU5-iF-pNJ" secondAttribute="width" multiplier="0.231884" id="bpa-r6-KUm"/>
                             <constraint firstItem="YD3-P7-6HR" firstAttribute="width" secondItem="AU5-iF-pNJ" secondAttribute="width" multiplier="0.424638" id="cbm-q8-HFv"/>
                             <constraint firstItem="TC3-Oy-nQF" firstAttribute="width" secondItem="AU5-iF-pNJ" secondAttribute="width" multiplier="0.314976" id="e4O-Yp-5bl"/>
+                            <constraint firstItem="TC3-Oy-nQF" firstAttribute="centerY" secondItem="auN-Z8-e7J" secondAttribute="centerY" id="g3X-Jp-Q6U"/>
                         </constraints>
                         <connections>
                             <outlet property="continue_button" destination="35P-EZ-hcn" id="8ZP-ls-UMT"/>
@@ -915,12 +915,13 @@
                         <outlet property="distance_activity" destination="TC3-Oy-nQF" id="ems-Fz-zXX"/>
                         <outlet property="time_of_activity" destination="IXC-JM-Kue" id="YNK-M3-lIz"/>
                         <outlet property="type_activity" destination="YD3-P7-6HR" id="HxJ-vh-QDg"/>
+                        <outlet property="view_with_buttons" destination="AU5-iF-pNJ" id="ijJ-OK-huL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MdS-zO-JN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6El-qQ-18K" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="1901"/>
+            <point key="canvasLocation" x="-272.46376811594206" y="1996.5401785714284"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

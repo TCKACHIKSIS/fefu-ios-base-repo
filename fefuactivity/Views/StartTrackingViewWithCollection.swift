@@ -9,7 +9,7 @@ import UIKit
 
 class StartTrackingViewWithCollection: UIView {
     var current_selected_activity: String = ""
-    var current_selected_cell = IndexPath()
+    var current_selected_cell_index = IndexPath()
     var lol_kek = ["Велосипед", "Бег"]
     
     
@@ -18,6 +18,9 @@ class StartTrackingViewWithCollection: UIView {
     @IBAction func Outlet_button_collection(_ sender: Any) {
         let parent = self.parentViewController as! LocationTrackingView
         parent.start_track_location()
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let needed: Run_activity_controller = storyboard.instantiateViewController(withIdentifier: "Run_activity_controller") as! Run_activity_controller
+        needed.setTypeActivity(type: current_selected_activity)
         
     }
     
@@ -55,7 +58,7 @@ extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
         {
                 // In this function is the code you must implement to your code project if you want to change size of Collection view
-        let width  = ((self.window?.frame.size.width)!-20)/3
+        let width  = ((self.window?.frame.size.width)!-20)/2
         return CGSize(width: width, height: width / 2.5)
         }
     
@@ -68,11 +71,11 @@ extension StartTrackingViewWithCollection: UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCellStartTracking
-        if current_selected_cell != IndexPath(row: NSNotFound, section: NSNotFound)
+        if current_selected_cell_index != IndexPath(row: NSNotFound, section: NSNotFound)
         {
-            collectionView.cellForItem(at: current_selected_cell)?.layer.borderWidth = 0
+            collectionView.cellForItem(at: current_selected_cell_index)?.layer.borderWidth = 0
         }
-        current_selected_cell = indexPath
+        current_selected_cell_index = indexPath
         current_selected_activity = cell.activity_label.text!
         cell.layer.borderWidth = 2.0
         cell.layer.borderColor = UIColor.blue.cgColor

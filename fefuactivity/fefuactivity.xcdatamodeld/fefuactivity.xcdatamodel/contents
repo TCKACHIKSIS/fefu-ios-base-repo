@@ -4,8 +4,9 @@
         <attribute name="end_date" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName=".Date"/>
         <attribute name="long_of_activity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="start_date" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName=".Date"/>
+        <attribute name="type_of_activity" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CDUserActivitys" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="CDUserActivitys" positionX="-63" positionY="-18" width="128" height="89"/>
     </elements>
 </model>
