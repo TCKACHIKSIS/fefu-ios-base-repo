@@ -9,12 +9,12 @@ import UIKit
 import CoreLocation
 import MapKit
 class LocationTrackingView: UIViewController{
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         mapView.delegate = self
         another_container_view.isHidden = true
+        
     }
     let userLocationIdentifier = "user_location_icon"
     @IBOutlet weak var container_view: UIView!
@@ -28,6 +28,36 @@ class LocationTrackingView: UIViewController{
         mapView.showsUserLocation = true
         container_view.isHidden = true
         another_container_view.isHidden = false
+    }
+    
+    func pause_track_location(){
+        locationManager.stopUpdatingLocation()
+        mapView.showsUserLocation = false
+    }
+    func continue_updating_location(){
+        locationManager.startUpdatingLocation()
+        mapView.showsUserLocation = true
+        
+    }
+    
+    func finish_activity(){
+        container_view.isHidden = false
+        another_container_view.isHidden = true
+        locationManager.stopUpdatingLocation()
+        mapView.showsUserLocation = false
+        var long_of_activnosti = Double();
+        if userLocationHistory.count > 0{
+        for i in 0...userLocationHistory.count-2{
+            long_of_activnosti += userLocationHistory[i].distance(from: userLocationHistory[i+1])
+        }
+            let core_data = CDUserActivitys(context: CoreDataActivity.context)
+            core_data.long_of_activity = long_of_activnosti / 1000;
+            core_data.start_date = userLocationHistory[0].timestamp
+            core_data.end_date = userLocationHistory.last?.timestamp
+            CoreDataActivity.saveContext()
+        }
+        userLocationHistory.removeAll()
+        
     }
     
     private let locationManager: CLLocationManager = {
@@ -53,12 +83,14 @@ class LocationTrackingView: UIViewController{
     
     fileprivate var userLocationHistory: [CLLocation] = []{
         didSet {
+            if mapView.overlays.count > 0{
+            mapView.removeOverlay(mapView.overlays[mapView.overlays.count - 1])
+            }
             let coordinates = userLocationHistory.map { $0.coordinate }
             
             let route = MKPolyline(coordinates: coordinates,                                         count: coordinates.count)
             route.title = "Ваш маршрут"
             mapView.addOverlay(route)
-            
         }
     }
     func getUserLocationHistory() -> [CLLocation] {
@@ -68,20 +100,6 @@ class LocationTrackingView: UIViewController{
     func StartUserActivity(){
     }
     
-    @IBAction func SaveActivityData(_ sender: Any) {
-        var long_of_activnosti = Double();
-        if userLocationHistory.count > 0{
-        for i in 0...userLocationHistory.count-2{
-            long_of_activnosti += userLocationHistory[i].distance(from: userLocationHistory[i+1])
-        }
-            print(long_of_activnosti, "ывавыавыавыавыавы")
-            let core_data = CDUserActivitys(context: CoreDataActivity.context)
-            core_data.long_of_activity = long_of_activnosti / 1000;
-            core_data.start_date = userLocationHistory[0].timestamp
-            core_data.end_date = userLocationHistory.last?.timestamp
-            CoreDataActivity.saveContext()
-        }
-    }
 }
 extension LocationTrackingView: CLLocationManagerDelegate{
     

@@ -1,5 +1,5 @@
 //
-//  Toggle_container_view_track.swift
+//  Run_activity_container.swift
 //  fefuactivity
 //
 //  Created by иван on 07.12.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Toggle_container_view_track: UIView {
+class Run_activity_container: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
