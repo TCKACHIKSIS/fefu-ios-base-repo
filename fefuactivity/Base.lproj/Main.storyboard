@@ -237,7 +237,7 @@
                                 </constraints>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKf-3s-rlq">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="HCl-ea-a3E"/>
@@ -245,7 +245,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-L9-9W9" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="699" width="350" height="50"/>
+                                <rect key="frame" x="32" y="733" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cna-JF-WuW"/>
                                 </constraints>
@@ -567,7 +567,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U36-SZ-avC">
-                                <rect key="frame" x="0.0" y="725" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="NcA-Np-FcN"/>
@@ -575,7 +575,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri4-5m-2iY" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="654" width="350" height="50"/>
+                                <rect key="frame" x="32" y="688" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EEm-Qu-qCX"/>
                                 </constraints>
@@ -818,7 +818,7 @@
             <objects>
                 <viewController storyboardIdentifier="Run_activity_controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="viz-mN-T8N" customClass="Run_activity_controller" customModule="fefuactivity" sceneMemberID="viewController">
                     <view key="view" tag="5" contentMode="scaleToFill" id="AU5-iF-pNJ" customClass="Active_activity" customModule="fefuactivity" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="321.33333333333331"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="321.33333333333326"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqK-cj-568">

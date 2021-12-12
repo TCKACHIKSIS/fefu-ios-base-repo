@@ -56,7 +56,6 @@ class Active_activity: UIView {
 extension Active_activity{
     @objc func updateTimer(){
         type_activity.text = self.selected_type_activity
-        print(type_activity.text)
         let userCalendar = Calendar.current
         let requestedComponent: Set<Calendar.Component> = [.hour,.minute,.second]
         var timeDifference = userCalendar.dateComponents(requestedComponent, from: current_date, to: Date())
