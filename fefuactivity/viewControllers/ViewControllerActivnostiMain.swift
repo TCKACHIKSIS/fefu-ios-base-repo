@@ -11,7 +11,7 @@ import CoreData
 class ViewControllerActivnosiMain: UIViewController {
     @IBOutlet weak var table_with_activnosti: UITableView!
     let name_of_table_cell = "OneStatementInActivityTableViewCell";
-    let data_for_table: [LocationData] = [];
+    var data_for_table: [LocationData] = [];
     private let fefuCoreData = FEFUCoreDataContainer.instance
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +23,56 @@ class ViewControllerActivnosiMain: UIViewController {
         table_with_activnosti.register(UINib(nibName: name_of_table_cell , bundle: nil), forCellReuseIdentifier: name_of_table_cell)
     }
     
+    private func formateDataForTable(item_from_data: CDUserActivitys){
+        
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ru_RU")
+        formatter.dateFormat = "MMM d, yyyy"
+        
+        if item_from_data.long_of_activity == 0 || item_from_data.end_date?.description ?? "Не найдено"
+            == "Не найдено"{
+            return;
+        }
+        var ptr: LocationData = LocationData()
+        
+        ptr.header_time_of_activnost = formatter.string(from: item_from_data.end_date!)
+        
+        ptr.long_way_of_activnosi = (round(
+            item_from_data.long_of_activity * 1000) / 1000
+        ).description + " км"
+        ptr.how_time_ago = item_from_data.end_date?.description ?? "Не найдено"
+        
+        
+        
+        let userCalendar = Calendar.current
+        let requestedComponent: Set<Calendar.Component> = [.hour,.minute,.second]
+        let timeDifference = userCalendar.dateComponents(requestedComponent, from: item_from_data.start_date!, to: item_from_data.end_date!)
+        ptr.long_time_of_activnosti = ""
+        if ( timeDifference.hour != 0 ){
+            ptr.long_time_of_activnosti += timeDifference.hour?.description ?? "??"
+            ptr.long_time_of_activnosti += "ч "
+        }
+        if ( timeDifference.minute != 0 ){
+            ptr.long_time_of_activnosti += timeDifference.minute?.description ?? "??"
+            ptr.long_time_of_activnosti += "м"
+        }
+        if ( timeDifference.second != 0 ){
+            ptr.long_time_of_activnosti += timeDifference.second?.description ?? "??"
+            ptr.long_time_of_activnosti += "c"
+        }
+        
+        data_for_table.insert(ptr, at: 0)
+    }
+    
     private func fetchDataFromCoreData(){
         let locate_request: NSFetchRequest<CDUserActivitys> = CDUserActivitys.fetchRequest()
         do {
             let rawActivity =
                 try FEFUCoreDataContainer.instance.context.fetch(locate_request)
             if ( rawActivity.count != 0 ){
-                let testViewData:[String] = rawActivity.map{
-                    rawActivity in
-                    return rawActivity.locationData ?? "??"
+                for item in rawActivity {
+                    formateDataForTable(item_from_data: item)
                 }
-                print("ООООООООККККККККККК")
-                print(testViewData)
-                print("OOOOOOOKKKKKK222222")
             }
         } catch {
             print(error)
@@ -47,14 +84,23 @@ class ViewControllerActivnosiMain: UIViewController {
 
 extension ViewControllerActivnosiMain: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return data_for_table.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: name_of_table_cell,
-            for:indexPath ) as? OneStatementInActivityTableViewCell{
-            cell.how_time_ago.text = "Дай бог здоровья"
+            for:indexPath
+            ) as? OneStatementInActivityTableViewCell{
+            
+            cell.how_time_ago.text = data_for_table[indexPath.row].header_time_of_activnost
+            
+            cell.long_way_of_activnost.text = data_for_table[indexPath.row].long_way_of_activnosi
+            
+            cell.header_time_of_activnost.text = data_for_table[indexPath.row].header_time_of_activnost
+            
+            cell.long_time_of_activnosti.text = data_for_table[indexPath.row].long_time_of_activnosti
+            
             return cell
         } else {
             assert(false)

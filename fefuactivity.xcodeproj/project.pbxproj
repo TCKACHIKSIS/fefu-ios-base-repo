@@ -15,7 +15,9 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		2C01746127198F5500154C57 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */; };
 		2C4A210D2719B1E900AE6331 /* fefu_button_type_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A210C2719B1E900AE6331 /* fefu_button_type_1.swift */; };
-		2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */; };
+		2C699A26275F273400DCF8C5 /* Active_activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C699A25275F273400DCF8C5 /* Active_activity.swift */; };
+		2C699A28275F49B400DCF8C5 /* Run_activity_container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C699A27275F49B400DCF8C5 /* Run_activity_container.swift */; };
+		2C699A2A275F4C6200DCF8C5 /* Run_activity_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C699A29275F4C6200DCF8C5 /* Run_activity_controller.swift */; };
 		2C9E4691273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E468F273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib */; };
 		2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E4692273F863D00B26FE4 /* location_data_struct.swift */; };
 		2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */; };
@@ -27,6 +29,10 @@
 		2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */; };
 		2CD15AF3272A603B0072C3BB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */; };
 		2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */; };
+		2CFB53FF2757B43D00DC6F99 /* OneStatementInActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */; };
+		2CFB540E275A36C400DC6F99 /* StartTrackingViewWithCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB540D275A36C400DC6F99 /* StartTrackingViewWithCollection.swift */; };
+		2CFB5415275A477B00DC6F99 /* CollectionViewCellStartTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB5413275A477B00DC6F99 /* CollectionViewCellStartTracking.swift */; };
+		2CFB5416275A477B00DC6F99 /* CollectionViewCellStartTracking.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CFB5414275A477B00DC6F99 /* CollectionViewCellStartTracking.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,9 @@
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		2C4A210C2719B1E900AE6331 /* fefu_button_type_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_button_type_1.swift; sourceTree = "<group>"; };
+		2C699A25275F273400DCF8C5 /* Active_activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Active_activity.swift; sourceTree = "<group>"; };
+		2C699A27275F49B400DCF8C5 /* Run_activity_container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_activity_container.swift; sourceTree = "<group>"; };
+		2C699A29275F4C6200DCF8C5 /* Run_activity_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_activity_controller.swift; sourceTree = "<group>"; };
 		2C9E468E273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneStatementInActivityTableViewCell.swift; sourceTree = "<group>"; };
 		2C9E468F273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneStatementInActivityTableViewCell.xib; sourceTree = "<group>"; };
 		2C9E4692273F863D00B26FE4 /* location_data_struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location_data_struct.swift; sourceTree = "<group>"; };
@@ -52,6 +61,9 @@
 		2CD15AEA272A5E460072C3BB /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../Downloads/San Francisco Pro Text 2/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContollerActivnostiEmpty.swift; sourceTree = "<group>"; };
 		2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerActivnostiMain.swift; sourceTree = "<group>"; };
+		2CFB540D275A36C400DC6F99 /* StartTrackingViewWithCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTrackingViewWithCollection.swift; sourceTree = "<group>"; };
+		2CFB5413275A477B00DC6F99 /* CollectionViewCellStartTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellStartTracking.swift; sourceTree = "<group>"; };
+		2CFB5414275A477B00DC6F99 /* CollectionViewCellStartTracking.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellStartTracking.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				2CFB540C275A367700DC6F99 /* Views */,
 				2C9E46972741191800B26FE4 /* CoreData */,
 				2C9E4688273E49CF00B26FE4 /* Cells */,
 				2CD15AEC272A5EA40072C3BB /* navigationItems */,
@@ -106,6 +119,7 @@
 		2C9E4688273E49CF00B26FE4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2CFB5409275A2EE400DC6F99 /* Cell_In_StartTracking_Collection */,
 				2C9E4689273E4A0400B26FE4 /* OneStatementInActivity */,
 			);
 			path = Cells;
@@ -153,6 +167,7 @@
 				2CD15AF1272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift */,
 				2CD15AF4272A60A90072C3BB /* ViewControllerActivnostiMain.swift */,
 				2CC9ED45273BF40000100143 /* StartTrackLocateViewController.swift */,
+				2C699A29275F4C6200DCF8C5 /* Run_activity_controller.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -163,6 +178,25 @@
 				2CC209C3271AB8E200D5453C /* custom_navigation_item_type1.swift */,
 			);
 			path = navigationItems;
+			sourceTree = "<group>";
+		};
+		2CFB5409275A2EE400DC6F99 /* Cell_In_StartTracking_Collection */ = {
+			isa = PBXGroup;
+			children = (
+				2CFB5413275A477B00DC6F99 /* CollectionViewCellStartTracking.swift */,
+				2CFB5414275A477B00DC6F99 /* CollectionViewCellStartTracking.xib */,
+			);
+			path = Cell_In_StartTracking_Collection;
+			sourceTree = "<group>";
+		};
+		2CFB540C275A367700DC6F99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CFB540D275A36C400DC6F99 /* StartTrackingViewWithCollection.swift */,
+				2C699A25275F273400DCF8C5 /* Active_activity.swift */,
+				2C699A27275F49B400DCF8C5 /* Run_activity_container.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +262,7 @@
 				2C9E4691273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.xib in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				2C01746127198F5500154C57 /* SF-Pro-Display-Regular.otf in Resources */,
+				2CFB5416275A477B00DC6F99 /* CollectionViewCellStartTracking.xib in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,15 +276,20 @@
 			files = (
 				2CC9ED46273BF40000100143 /* StartTrackLocateViewController.swift in Sources */,
 				2CD15AF5272A60A90072C3BB /* ViewControllerActivnostiMain.swift in Sources */,
+				2CFB53FF2757B43D00DC6F99 /* OneStatementInActivityTableViewCell.swift in Sources */,
 				2C9E46992741195F00B26FE4 /* FEFUCoreDataContainer.swift in Sources */,
-				2C9E4690273E4B0800B26FE4 /* OneStatementInActivityTableViewCell.swift in Sources */,
+				2CFB540E275A36C400DC6F99 /* StartTrackingViewWithCollection.swift in Sources */,
 				2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */,
+				2C699A2A275F4C6200DCF8C5 /* Run_activity_controller.swift in Sources */,
 				2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
+				2C699A26275F273400DCF8C5 /* Active_activity.swift in Sources */,
+				2CFB5415275A477B00DC6F99 /* CollectionViewCellStartTracking.swift in Sources */,
 				2C4A210D2719B1E900AE6331 /* fefu_button_type_1.swift in Sources */,
 				2CC209C4271AB8E200D5453C /* custom_navigation_item_type1.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
+				2C699A28275F49B400DCF8C5 /* Run_activity_container.swift in Sources */,
 				2CBE37EC27291CBA009BC25C /* fefu_button_light_blue.swift in Sources */,
 				2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */,
 				2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */,

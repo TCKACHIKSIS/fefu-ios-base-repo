@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 struct LocationData{
-    let how_time_ago = String();
-    let type_of_activnosti = String();
-    let image_of_activnosti = UIImage();
-    let long_of_activnosi = String();
-    let long_time_of_activnosti = String();
-    let header_time_of_activnost = String();
+    var how_time_ago = String();
+    var type_of_activnosti = String();
+    var image_of_activnosti = UIImage();
+    var long_way_of_activnosi = String();
+    var long_time_of_activnosti = String();
+    var header_time_of_activnost = String();
 }
