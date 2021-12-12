@@ -43,6 +43,7 @@ class Active_activity: UIView {
     }
     override func awakeFromNib(){
         super.awakeFromNib()
+        self.time_of_activity.text = ""
         continue_button.isHidden = true
     }
     func updateDistance(text: String){
