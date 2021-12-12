@@ -13,7 +13,6 @@ class Active_activity: UIView {
     var current_date = Date()
     var full_saved_time: DateComponents?
     var current_saved_time: DateComponents?
-    var selected_type_activity: String?
     @IBOutlet weak var time_of_activity: UILabel!
     @IBOutlet weak var distance_of_activity: UILabel!
     @IBOutlet weak var type_activity: UILabel!
@@ -28,7 +27,6 @@ class Active_activity: UIView {
     }
     @IBAction func continue_tracking(_ sender: Any) {
         full_saved_time = current_saved_time
-        current_date = Date()
         createTimer()
         let parent = self.parentViewController as! LocationTrackingView
         parent.continue_updating_location()
@@ -36,7 +34,7 @@ class Active_activity: UIView {
         pause_button.isHidden = false
     }
     func setSelectedType(type: String){
-        self.selected_type_activity = type
+        self.type_activity.text = type
     }
     @IBAction func finish_activity(_ sender: Any) {
         timer?.invalidate()
@@ -46,7 +44,6 @@ class Active_activity: UIView {
     override func awakeFromNib(){
         super.awakeFromNib()
         continue_button.isHidden = true
-        createTimer()
     }
     func updateDistance(text: String){
         distance_of_activity.text = text
@@ -55,7 +52,6 @@ class Active_activity: UIView {
 
 extension Active_activity{
     @objc func updateTimer(){
-        type_activity.text = self.selected_type_activity
         let userCalendar = Calendar.current
         let requestedComponent: Set<Calendar.Component> = [.hour,.minute,.second]
         var timeDifference = userCalendar.dateComponents(requestedComponent, from: current_date, to: Date())
@@ -79,6 +75,7 @@ extension Active_activity{
         time_of_activity.text = ptr.description
     }
     func createTimer() {
+    current_date = Date()
     formatter.dateFormat = "MM/dd/yyyy"
     timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,

@@ -18,9 +18,7 @@ class StartTrackingViewWithCollection: UIView {
     @IBAction func Outlet_button_collection(_ sender: Any) {
         let parent = self.parentViewController as! LocationTrackingView
         parent.start_track_location()
-        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let needed: Run_activity_controller = storyboard.instantiateViewController(withIdentifier: "Run_activity_controller") as! Run_activity_controller
-        needed.setTypeActivity(type: current_selected_activity)
+        parent.chosenActivity = current_selected_activity
         
     }
     

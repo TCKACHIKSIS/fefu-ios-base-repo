@@ -20,19 +20,25 @@ class LocationTrackingView: UIViewController{
         another_container_view.isHidden = true
     }
     let userLocationIdentifier = "user_location_icon"
+    var chosenActivity = String()
     @IBOutlet weak var container_view: UIView!
     @IBOutlet weak var another_container_view: UIView!
     @IBOutlet weak var mapView: MKMapView!
     let CoreDataActivity = FEFUCoreDataContainer.instance
     func start_track_location(){
-        
+        var myTreasure = Run_activity_controller()
         locationManager.startUpdatingLocation()
         mapView.showsUserLocation = true
         container_view.isHidden = true
         another_container_view.isHidden = false
-        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let needed: Run_activity_controller = storyboard.instantiateViewController(withIdentifier: "Run_activity_controller") as! Run_activity_controller
-        needed.createTimerFromParent()
+        for child in self.children{
+            if child is Run_activity_controller{
+                myTreasure = child as! Run_activity_controller
+            }
+        }
+        myTreasure.view_with_buttons.createTimer()
+        print("вввввв-----------   ", chosenActivity)
+        myTreasure.view_with_buttons.setSelectedType(type: chosenActivity)
         
     }
     

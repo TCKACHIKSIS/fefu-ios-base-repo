@@ -16,14 +16,4 @@ class Run_activity_controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    func setTypeActivity(type: String){
-        let foundView = view.viewWithTag(5) as! Active_activity
-        foundView.setSelectedType(type: type)
-    }
-    func createTimerFromParent(){
-        let foundView = view.viewWithTag(5) as! Active_activity
-        /// Функция отрабатывает, но таймер не создается
-        foundView.createTimer()
-        
-    }
 }
