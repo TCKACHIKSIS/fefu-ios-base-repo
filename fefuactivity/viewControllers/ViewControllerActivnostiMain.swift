@@ -41,25 +41,8 @@ class ViewControllerActivnosiMain: UIViewController {
             item_from_data.long_of_activity * 1000) / 1000
         ).description + " км"
         ptr.how_time_ago = item_from_data.end_date?.description ?? "Не найдено"
-        
-        
-        
-        let userCalendar = Calendar.current
-        let requestedComponent: Set<Calendar.Component> = [.hour,.minute,.second]
-        let timeDifference = userCalendar.dateComponents(requestedComponent, from: item_from_data.start_date!, to: item_from_data.end_date!)
-        ptr.long_time_of_activnosti = ""
-        if ( timeDifference.hour != 0 ){
-            ptr.long_time_of_activnosti += timeDifference.hour?.description ?? "??"
-            ptr.long_time_of_activnosti += "ч "
-        }
-        if ( timeDifference.minute != 0 ){
-            ptr.long_time_of_activnosti += timeDifference.minute?.description ?? "??"
-            ptr.long_time_of_activnosti += "м"
-        }
-        if ( timeDifference.second != 0 ){
-            ptr.long_time_of_activnosti += timeDifference.second?.description ?? "??"
-            ptr.long_time_of_activnosti += "c"
-        }
+        ptr.type_of_activnosti = item_from_data.type_of_activity ?? "Не выбран"
+        ptr.long_time_of_activnosti = item_from_data.durationOfActivity ?? "??"
         
         data_for_table.insert(ptr, at: 0)
     }
@@ -101,6 +84,7 @@ extension ViewControllerActivnosiMain: UITableViewDataSource {
             
             cell.long_time_of_activnosti.text = data_for_table[indexPath.row].long_time_of_activnosti
             
+            cell.type_of_activnosti.text = data_for_table[indexPath.row].type_of_activnosti
             return cell
         } else {
             assert(false)

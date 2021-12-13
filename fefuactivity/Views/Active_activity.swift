@@ -39,11 +39,12 @@ class Active_activity: UIView {
     @IBAction func finish_activity(_ sender: Any) {
         timer?.invalidate()
         let parent = self.parentViewController as! LocationTrackingView
-        parent.finish_activity()
+        parent.finish_activity(durationFromChild: time_of_activity.text ?? "??")
     }
     override func awakeFromNib(){
         super.awakeFromNib()
         self.time_of_activity.text = ""
+        self.distance_of_activity.text = ""
         continue_button.isHidden = true
     }
     func updateDistance(text: String){
@@ -59,7 +60,20 @@ extension Active_activity{
         var ptr = ""
         if full_saved_time != nil {
             timeDifference.second = timeDifference.second! + (full_saved_time?.second)! as Int
+            timeDifference.minute = timeDifference.minute! +
+                (full_saved_time?.minute)! as Int
+            timeDifference.hour = timeDifference.hour! + (full_saved_time?.hour)! as Int
         }
+        
+        if ( timeDifference.second! >= 60 ){
+            timeDifference.minute = timeDifference.minute! + (timeDifference.second! / 60)
+            timeDifference.second = timeDifference.second! % 60
+        }
+        if ( timeDifference.minute! >= 60 ){
+            timeDifference.hour = timeDifference.hour! + (timeDifference.hour! / 60)
+            timeDifference.minute = timeDifference.minute! % 60
+        }
+        
         if ( timeDifference.hour != 0 ){
             ptr += timeDifference.hour?.description ?? "??"
             ptr += "ч "
@@ -72,6 +86,8 @@ extension Active_activity{
             ptr += timeDifference.second?.description ?? "??"
             ptr += "c"
         }
+        
+        print(timeDifference)
         current_saved_time = timeDifference
         time_of_activity.text = ptr.description
     }
