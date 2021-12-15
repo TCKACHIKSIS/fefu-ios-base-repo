@@ -9,6 +9,7 @@ import UIKit
 
 class Fefu_text_field_type_1: UITextField{
     
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         CommonInit()
