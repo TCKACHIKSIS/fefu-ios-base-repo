@@ -241,7 +241,7 @@
                                 </constraints>
                             </view>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKf-3s-rlq">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="HCl-ea-a3E"/>
@@ -249,16 +249,13 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-L9-9W9" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="733" width="350" height="50"/>
+                                <rect key="frame" x="32" y="699" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cna-JF-WuW"/>
                                 </constraints>
                                 <state key="normal" title="Старт">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Pqi-YM-iNv" kind="show" id="sPw-IO-1CW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="usb-VP-pCc"/>
@@ -310,7 +307,7 @@
                                 </items>
                             </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-og-4e8">
-                                <rect key="frame" x="0.0" y="104" width="414" height="638"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="682"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ReW-vP-oB8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
@@ -571,7 +568,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U36-SZ-avC">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="activnosti" landscapeImage="activnosti" largeContentSizeImage="activnosti" selectedImage="activnosti" id="NcA-Np-FcN"/>
@@ -579,7 +576,7 @@
                                 </items>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri4-5m-2iY" customClass="FEFUButtonType2LightBlue" customModule="fefuactivity">
-                                <rect key="frame" x="32" y="708" width="350" height="50"/>
+                                <rect key="frame" x="32" y="742" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EEm-Qu-qCX"/>
                                 </constraints>
@@ -672,9 +669,6 @@
                                 <color key="textColor" name="text_field_color_type_1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <segue destination="Pqi-YM-iNv" kind="show" id="hzd-vO-33D"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnK-aD-pGX" customClass="FEFUButtonType1" customModule="fefuactivity">
                                 <rect key="frame" x="40" y="519.33333333333337" width="334" height="56"/>
@@ -944,9 +938,6 @@
             <point key="canvasLocation" x="-272.46376811594206" y="1996.5401785714284"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="hzd-vO-33D"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="LogoSplash" width="61" height="71"/>
         <image name="activity_label" width="110" height="10.666666984558105"/>

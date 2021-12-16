@@ -38,6 +38,9 @@ class Active_activity: UIView {
     }
     @IBAction func finish_activity(_ sender: Any) {
         timer?.invalidate()
+        time_of_activity.text = ""
+        distance_of_activity.text = ""
+        type_activity.text = ""
         let parent = self.parentViewController as! LocationTrackingView
         parent.finish_activity(durationFromChild: time_of_activity.text ?? "??")
     }
