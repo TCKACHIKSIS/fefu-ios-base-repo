@@ -68,7 +68,7 @@ class LocationTrackingView: UIViewController{
             CoreDataActivity.saveContext()
         }
         userLocationHistory.removeAll()
-        
+        navigationController?.popViewController(animated: true)
     }
     
     private let locationManager: CLLocationManager = {

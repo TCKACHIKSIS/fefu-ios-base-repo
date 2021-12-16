@@ -1,14 +1,22 @@
 //
-//  ViewControllerActivnostiMain.swift
+//  MainTableController.swift
 //  fefuactivity
 //
-//  Created by иван on 28.10.2021.
+//  Created by иван on 16.12.2021.
 //
 
 import UIKit
 import CoreData
 
-class ViewControllerActivnosiMain: UIViewController {
+class MainTableController: UIViewController {
+   
+    @IBAction func typeStartButton(_ sender: Any) {
+        let ptr = self.storyboard?.instantiateViewController(identifier: "LockationTracking")
+        ptr?.modalPresentationStyle = .fullScreen
+        self.present(ptr! , animated: false)
+    }
+    
+    
     @IBOutlet weak var table_with_activnosti: UITableView!
     let name_of_table_cell = "OneStatementInActivityTableViewCell";
     var data_for_table: [LocationData] = [];
@@ -65,7 +73,7 @@ class ViewControllerActivnosiMain: UIViewController {
 }
 
 
-extension ViewControllerActivnosiMain: UITableViewDataSource {
+extension MainTableController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data_for_table.count
     }

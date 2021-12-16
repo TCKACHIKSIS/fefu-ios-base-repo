@@ -46,7 +46,12 @@ class RegistrationControllet: UIViewController {
                 queue.async {
                     UserDefaults.standard.set(user.token, forKey: "token")
                 }
-                } onError: { err in
+                DispatchQueue.main.async {
+                    let ptr = self.storyboard?.instantiateViewController(identifier: "mainController")
+                    ptr?.modalPresentationStyle = .fullScreen
+                    self.present(ptr! , animated: false)
+                }
+                    } onError: { err in
                         DispatchQueue.main.async {
                             print(err)
                         }

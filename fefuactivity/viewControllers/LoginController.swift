@@ -14,9 +14,7 @@ class LoginController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let login = loginTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-                
         let body = UserLoginBody(login: login, password: password)
-                
         do {
             let reqBody = try LoginController.encoder.encode(body)
             let queue = DispatchQueue.global(qos: .utility)
@@ -24,10 +22,24 @@ class LoginController: UIViewController {
                 queue.async {
                     UserDefaults.standard.set(user.token, forKey: "token")
                 }
-            }onError: { err in
                 DispatchQueue.main.async {
-                    print(err)
+                    let ptr = self.storyboard?.instantiateViewController(identifier: "mainController")
+                    ptr?.modalPresentationStyle = .fullScreen
+                    self.present(ptr! , animated: false)
                 }
+            }onError: { groupErr in
+                DispatchQueue.main.async {
+                    for error in groupErr.errors{
+                        for value in error.value{
+                            if (value == "Неверный логин или пароль"){
+                                let alert = UIAlertController(title: "Ошибка", message: "Неверный логин или пароль", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "Ясно", style: .cancel, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                        }
+                    }
+                }
+                
         }
 
         } catch {
