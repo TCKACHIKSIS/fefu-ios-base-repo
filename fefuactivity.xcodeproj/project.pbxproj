@@ -15,6 +15,9 @@
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
 		2C01746127198F5500154C57 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */; };
 		2C1426582769E2C400B82CF8 /* RegistrationControllet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1426572769E2C400B82CF8 /* RegistrationControllet.swift */; };
+		2C142661276B10D900B82CF8 /* ConnectToBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C142660276B10D900B82CF8 /* ConnectToBackend.swift */; };
+		2C142663276B112500B82CF8 /* ModelsForAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C142662276B112500B82CF8 /* ModelsForAuth.swift */; };
+		2C142665276B174B00B82CF8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C142664276B174B00B82CF8 /* LoginController.swift */; };
 		2C4A210D2719B1E900AE6331 /* fefu_button_type_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A210C2719B1E900AE6331 /* fefu_button_type_1.swift */; };
 		2C699A26275F273400DCF8C5 /* Active_activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C699A25275F273400DCF8C5 /* Active_activity.swift */; };
 		2C699A28275F49B400DCF8C5 /* Run_activity_container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C699A27275F49B400DCF8C5 /* Run_activity_container.swift */; };
@@ -47,6 +50,9 @@
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C01746027198F5500154C57 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		2C1426572769E2C400B82CF8 /* RegistrationControllet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationControllet.swift; sourceTree = "<group>"; };
+		2C142660276B10D900B82CF8 /* ConnectToBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectToBackend.swift; sourceTree = "<group>"; };
+		2C142662276B112500B82CF8 /* ModelsForAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsForAuth.swift; sourceTree = "<group>"; };
+		2C142664276B174B00B82CF8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C4A210C2719B1E900AE6331 /* fefu_button_type_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fefu_button_type_1.swift; sourceTree = "<group>"; };
 		2C699A25275F273400DCF8C5 /* Active_activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Active_activity.swift; sourceTree = "<group>"; };
 		2C699A27275F49B400DCF8C5 /* Run_activity_container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run_activity_container.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				2C14265F276B108B00B82CF8 /* backend */,
 				2CFB540C275A367700DC6F99 /* Views */,
 				2C9E46972741191800B26FE4 /* CoreData */,
 				2C9E4688273E49CF00B26FE4 /* Cells */,
@@ -116,6 +123,15 @@
 				2C9E46942741062F00B26FE4 /* fefuactivity.xcdatamodeld */,
 			);
 			path = fefuactivity;
+			sourceTree = "<group>";
+		};
+		2C14265F276B108B00B82CF8 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				2C142660276B10D900B82CF8 /* ConnectToBackend.swift */,
+				2C142662276B112500B82CF8 /* ModelsForAuth.swift */,
+			);
+			path = backend;
 			sourceTree = "<group>";
 		};
 		2C9E4688273E49CF00B26FE4 /* Cells */ = {
@@ -171,6 +187,7 @@
 				2CC9ED45273BF40000100143 /* StartTrackLocateViewController.swift */,
 				2C699A29275F4C6200DCF8C5 /* Run_activity_controller.swift */,
 				2C1426572769E2C400B82CF8 /* RegistrationControllet.swift */,
+				2C142664276B174B00B82CF8 /* LoginController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -284,7 +301,9 @@
 				2C1426582769E2C400B82CF8 /* RegistrationControllet.swift in Sources */,
 				2CFB540E275A36C400DC6F99 /* StartTrackingViewWithCollection.swift in Sources */,
 				2CC209C2271AAA6900D5453C /* fefu_text_field_type1.swift in Sources */,
+				2C142663276B112500B82CF8 /* ModelsForAuth.swift in Sources */,
 				2C699A2A275F4C6200DCF8C5 /* Run_activity_controller.swift in Sources */,
+				2C142665276B174B00B82CF8 /* LoginController.swift in Sources */,
 				2CD15AF2272A5F490072C3BB /* ViewContollerActivnostiEmpty.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				2C699A26275F273400DCF8C5 /* Active_activity.swift in Sources */,
@@ -297,6 +316,7 @@
 				2CBE37EC27291CBA009BC25C /* fefu_button_light_blue.swift in Sources */,
 				2C9E46962741062F00B26FE4 /* fefuactivity.xcdatamodeld in Sources */,
 				2C9E4693273F863D00B26FE4 /* location_data_struct.swift in Sources */,
+				2C142661276B10D900B82CF8 /* ConnectToBackend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

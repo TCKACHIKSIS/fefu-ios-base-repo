@@ -7,23 +7,6 @@
 
 import UIKit
 
-struct Gender: Decodable {
-    var code: Int
-    var name: String
-}
-
-struct User: Decodable {
-    var id: Int
-    var name: String
-    var login: String
-    var gender: Gender
-}
-
-struct Tocken : Decodable {
-    var token: String
-    var user : User
-}
-
 
 class RegistrationControllet: UIViewController {
 
@@ -41,33 +24,36 @@ class RegistrationControllet: UIViewController {
     
     @IBAction func registerButton(_ sender: Any) {
         
+        let genders = ["мужской": 1, "женский": 2]
         
-        guard let url = URL(string: "https://fefu.t.feip.co/api/auth/register") else {return}
-        let urlRequest = URLRequest(url: url)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        
-        let task = session.dataTask(with: urlRequest) { data, _, error in
-            
-            if let data = data {
-                let decoder  = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                do {
-                    let dataUsersModel = try decoder.decode([Tocken].self, from: data)
-                    
-                    let firstStruct = dataUsersModel.first
-                    print(firstStruct?.user.id, " ", firstStruct?.user.name, " ",
-                          firstStruct?.user.gender.name)
-                    
-                } catch let decodingError{
-                    print("Ошибка - ", decodingError )
-                }
-            }
-            return
-            
+        let login = loginTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let passwordConfirm = repeatPasswordTextField.text ?? ""
+        let name = nicknameTextField.text ?? ""
+        let gender = genders[genderTextField.text ?? ""]
+        if passwordConfirm != password {
+            let alert = UIAlertController(title: "Ошибка", message: "Пароли не совпадают", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ясно", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-        task.resume()
-        
+                
+        let body = UserRegBody(login: login, password: password, name: name, gender: gender ?? 0)
+                
+        do {
+            let reqBody = try ConnectToBackend.encoder.encode(body)
+            let queue = DispatchQueue.global(qos: .utility)
+            ConnectToBackend.register(reqBody) { user in
+                queue.async {
+                    UserDefaults.standard.set(user.token, forKey: "token")
+                }
+                } onError: { err in
+                        DispatchQueue.main.async {
+                            print(err)
+                        }
+                }
+            } catch {
+                print(error)
+            }
         
     }
     
@@ -105,30 +91,3 @@ class RegistrationControllet: UIViewController {
 }
 
 
-func saveForLogin(){
-    guard let url = URL(string: "https://fefu.t.feip.co/api/auth/register") else {return}
-    let urlRequest = URLRequest(url: url)
-    let config = URLSessionConfiguration.default
-    let session = URLSession(configuration: config)
-    
-    let task = session.dataTask(with: urlRequest) { data, _, error in
-        
-        if let data = data {
-            let decoder  = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            do {
-                let dataUsersModel = try decoder.decode([Tocken].self, from: data)
-                
-                let firstStruct = dataUsersModel.first
-                print(firstStruct?.user.id, " ", firstStruct?.user.name, " ",
-                      firstStruct?.user.gender.name)
-                
-            } catch let decodingError{
-                print("Ошибка - ", decodingError )
-            }
-        }
-        return
-        
-    }
-    task.resume()
-}
