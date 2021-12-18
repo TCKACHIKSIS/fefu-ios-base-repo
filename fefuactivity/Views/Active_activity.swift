@@ -13,7 +13,6 @@ class Active_activity: UIView {
     var current_date = Date()
     var full_saved_time: DateComponents?
     var current_saved_time: DateComponents?
-    var selected_type_activity: String?
     @IBOutlet weak var time_of_activity: UILabel!
     @IBOutlet weak var distance_of_activity: UILabel!
     @IBOutlet weak var type_activity: UILabel!
@@ -28,7 +27,6 @@ class Active_activity: UIView {
     }
     @IBAction func continue_tracking(_ sender: Any) {
         full_saved_time = current_saved_time
-        current_date = Date()
         createTimer()
         let parent = self.parentViewController as! LocationTrackingView
         parent.continue_updating_location()
@@ -36,17 +34,21 @@ class Active_activity: UIView {
         pause_button.isHidden = false
     }
     func setSelectedType(type: String){
-        self.selected_type_activity = type
+        self.type_activity.text = type
     }
     @IBAction func finish_activity(_ sender: Any) {
         timer?.invalidate()
+        time_of_activity.text = ""
+        distance_of_activity.text = ""
+        type_activity.text = ""
         let parent = self.parentViewController as! LocationTrackingView
-        parent.finish_activity()
+        parent.finish_activity(durationFromChild: time_of_activity.text ?? "??")
     }
     override func awakeFromNib(){
         super.awakeFromNib()
+        self.time_of_activity.text = ""
+        self.distance_of_activity.text = ""
         continue_button.isHidden = true
-        createTimer()
     }
     func updateDistance(text: String){
         distance_of_activity.text = text
@@ -55,14 +57,26 @@ class Active_activity: UIView {
 
 extension Active_activity{
     @objc func updateTimer(){
-        type_activity.text = self.selected_type_activity
         let userCalendar = Calendar.current
         let requestedComponent: Set<Calendar.Component> = [.hour,.minute,.second]
         var timeDifference = userCalendar.dateComponents(requestedComponent, from: current_date, to: Date())
         var ptr = ""
         if full_saved_time != nil {
             timeDifference.second = timeDifference.second! + (full_saved_time?.second)! as Int
+            timeDifference.minute = timeDifference.minute! +
+                (full_saved_time?.minute)! as Int
+            timeDifference.hour = timeDifference.hour! + (full_saved_time?.hour)! as Int
         }
+        
+        if ( timeDifference.second! >= 60 ){
+            timeDifference.minute = timeDifference.minute! + (timeDifference.second! / 60)
+            timeDifference.second = timeDifference.second! % 60
+        }
+        if ( timeDifference.minute! >= 60 ){
+            timeDifference.hour = timeDifference.hour! + (timeDifference.hour! / 60)
+            timeDifference.minute = timeDifference.minute! % 60
+        }
+        
         if ( timeDifference.hour != 0 ){
             ptr += timeDifference.hour?.description ?? "??"
             ptr += "ч "
@@ -75,10 +89,13 @@ extension Active_activity{
             ptr += timeDifference.second?.description ?? "??"
             ptr += "c"
         }
+        
+        print(timeDifference)
         current_saved_time = timeDifference
         time_of_activity.text = ptr.description
     }
     func createTimer() {
+    current_date = Date()
     formatter.dateFormat = "MM/dd/yyyy"
     timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
