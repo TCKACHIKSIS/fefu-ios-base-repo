@@ -2,7 +2,7 @@
 //  CollectionViewCellStartTracking.swift
 //  fefuactivity
 //
-//  Created by иван on 03.12.2021.
+
 //
 
 import UIKit

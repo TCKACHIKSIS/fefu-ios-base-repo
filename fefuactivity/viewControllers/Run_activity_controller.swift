@@ -2,7 +2,7 @@
 //  Run_activity_controller.swift
 //  fefuactivity
 //
-//  Created by иван on 07.12.2021.
+
 //
 
 import UIKit

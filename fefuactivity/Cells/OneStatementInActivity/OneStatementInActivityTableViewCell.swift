@@ -2,7 +2,7 @@
 //  OneStatementInActivityTableViewCell.swift
 //  fefuactivity
 //
-//  Created by иван on 12.11.2021.
+
 //
 
 import UIKit

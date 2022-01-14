@@ -2,7 +2,7 @@
 //  fefu_button_type_1.swift
 //  fefuactivity
 //
-//  Created by иван on 15.10.2021.
+
 //
 import UIKit
 

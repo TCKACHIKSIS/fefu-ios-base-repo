@@ -2,7 +2,7 @@
 //  RegistrationControllet.swift
 //  fefuactivity
 //
-//  Created by иван on 15.12.2021.
+
 //
 
 import UIKit

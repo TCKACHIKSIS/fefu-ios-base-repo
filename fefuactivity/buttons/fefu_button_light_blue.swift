@@ -2,7 +2,7 @@
 //  fefu_button_light_blue.swift
 //  fefuactivity
 //
-//  Created by иван on 27.10.2021.
+
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  location_data_struct.swift
 //  fefuactivity
 //
-//  Created by иван on 13.11.2021.
+
 //
 
 import Foundation

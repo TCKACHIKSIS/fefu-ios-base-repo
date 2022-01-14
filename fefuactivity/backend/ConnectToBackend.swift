@@ -2,7 +2,7 @@
 //  ConnectToBackend.swift
 //  fefuactivity
 //
-//  Created by иван on 16.12.2021.
+
 //
 
 import Foundation
